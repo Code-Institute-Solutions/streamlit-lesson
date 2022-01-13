@@ -81,6 +81,7 @@ st.write("---")
 #                         })
 
 #### and will plot the data
+# import matplotlib.pyplot as plt
 # import seaborn as sns  
 # st.write("* Plot with Matplotlib/Seaborn") # we create a figure and plot the data
 # sns.set_style("whitegrid")
