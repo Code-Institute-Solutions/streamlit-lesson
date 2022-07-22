@@ -19,12 +19,12 @@ st.write("---")
 ### Display text ###
 ################################################################################
 # st.write("# This is a major section")  # use markdown to create headers and sub headers
-# st.write("## This is a subsection 1")
-# st.write("* Here is a content for subsection 1")
-# st.write("## This is a subsection 2")
-# st.write("* Here is a content for subsection 2")
-# st.write("### This is a sub-subsection 2") # you can play around by adding more sub-sections
-# st.write("Here is another content")
+# st.write("## This is subsection 1")
+# st.write("* Here is content for subsection 1")
+# st.write("## This is subsection 2")
+# st.write("* Here is content for subsection 2")
+# st.write("### This is sub-subsection 2") # you can play around by adding more sub-sections
+# st.write("Here other content")
 # st.info("* This is made with st.info()") # Display a text with informational style.
 # st.success("* This is made with st.success()") # Display a text with success style.
 # st.warning("* This is made with st.warning()") # Display a text with warning style.
@@ -42,7 +42,7 @@ st.write("---")
 # my_dict = {'Number':[1,2,3], 'Color': ['Blue', 'Yellow', 'Green']} # python dictionary
 
 ##### we will use pandas and numpy to generate a DataFrame. 
-##### For now, think a DataFrame as a table, with columns, rows and data.
+##### For now, think of a DataFrame as a table with columns, rows and data.
 # import numpy as np
 # import pandas as pd 
 # np.random.seed(1)
@@ -71,7 +71,7 @@ st.write("---")
 
 ##### We will use matplotlib, seaborn and plotly  for data visualization
 ##### for now, we just need to understand the plotting capability
-##### the commands and its usabilitiy will come clear across the lessons and walkthrough project
+##### the commands and their usability will come clear across the lessons and walkthrough project
 ##### we will use a generated DataFrame
 # import numpy as np
 # import pandas as pd 
@@ -89,7 +89,7 @@ st.write("---")
 # sns.scatterplot(data=df, x='Col1', y='Col2', ax=axes)
 # st.pyplot(fig) # When you render a Matplotlib or Seaborn plot, you wil use st.pyplot()
 #                # for example, in a jupyter notebook, we render with plt.show()
-#                # don't worry, we will see that with more detail soon 
+#                # don't worry; we will see that in more detail soon 
 # st.write("---")
 
 # st.write("* This example uses Plotly - an interactive data visualization library")
@@ -107,10 +107,10 @@ st.write("---")
 ### Optimize performance ###
 ################################################################################
 
-#### Currently, every time you reload the dashboard page, so is the script
-#### this may cause delay in your app, ie.: you may reload multiple time the same data 
+#### Currently, every time you reload the dashboard page so is the script
+#### this may cause a delay in your app, i.e.: you may reload multiple time the same data 
 #### to solve that, you can cache your data by adding a decorator @st.cache in a function that loads your data
-#### in this example you might not notice the speed difference, but in real applications this difference is notable
+#### in this example, you might not notice the speed difference, but in real applications, this difference is noticeable
 
 # import numpy as np
 # import pandas as pd 
@@ -143,13 +143,13 @@ st.write("---")
 # if st.checkbox('Check me out'):
 #     st.write("You are brave")
 # else:
-#     st.write("What are you waiting?")
+#     st.write("What are you waiting for?")
 # st.write("---")
 
 # st.radio(label='Radio button options', options=[1,2,3])
 # st.write("---")
 
-# st.selectbox(label='Select one single option', options=[1,2,3])
+# st.selectbox(label='Select one single option', options=[1,2,3], key="1")
 # st.write("---")
 
 # st.multiselect(label='Select multiple options', options=[1,2,3])
@@ -179,9 +179,9 @@ st.write("---")
 
 
 
-#### You probably noticed there is no much value when you randomly create widgets
-#### The idea is to assign them to a variable and this variable is used to interact with the application
-# option = st.selectbox(label='Pick one:', options=[1,2,3,'A'])
+#### You probably noticed there is not much value when you randomly create widgets
+#### The idea is to assign them to a variable, and this variable is used to interact with the application
+# option = st.selectbox(label='Pick one:', options=[1,2,3,'A'], key="2")
 # st.write(f"* I see you selected {option}, and its type is {type(option)}")
 # st.write("---")
 
@@ -189,15 +189,15 @@ st.write("---")
 
 #### you can create 'columns' (or split the row space) and assign multiple items/widgets
 #### you should use st.beta_columns() and inform amount of columns
-#### that will be assigned to individual variables, ie.: if there were 3 columns, you would have col1, col2, col3
+#### that will be assigned to individual variables, i.e.: if there were three columns, you would have col1, col2, col3
 #### you will define the content on each variable with the command "with:"
-#### this example prints a list in the first column, and display a widget in the second column
+#### this example prints a list in the first column and display a widget in the second column
 
 # col1, col2 = st.beta_columns(2)
 # with col1:
 #     st.write([1,2,3])
 # with col2:
-#     option = st.selectbox(label='Pick one:', options=[1,2,3,'A'])
+#     option = st.selectbox(label='Pick one:', options=[1,2,3,'A'], key="3")
 
 # st.write(f"* I see you selected {option}, and its type is {type(option)}")
 
