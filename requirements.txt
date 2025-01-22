@@ -1,8 +1,6 @@
-streamlit==0.85.0
-numpy==1.19.2
-pandas==1.1.2
-matplotlib==3.3.1
-seaborn==0.11.0
-plotly==4.12.0
-protobuf==3.20
-altair<5
+numpy==1.26.1
+pandas==2.1.1
+matplotlib==3.8.0
+seaborn==0.13.2
+plotly==5.17.0
+streamlit==1.40.2
