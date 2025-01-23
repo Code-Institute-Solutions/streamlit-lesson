@@ -109,13 +109,13 @@ st.write("---")
 
 #### Currently, every time you reload the dashboard page so is the script
 #### this may cause a delay in your app, i.e.: you may reload multiple time the same data 
-#### to solve that, you can cache your data by adding a decorator @st.cache in a function that loads your data
+#### to solve that, you can cache your data by adding a decorator @st.cache_data in a function that loads your data
 #### in this example, you might not notice the speed difference, but in real applications, this difference is noticeable
 
 # import numpy as np
 # import pandas as pd 
 
-# @st.cache
+# @st.cache_data
 # def load_your_data():
 #     np.random.seed(1)
 #     df = pd.DataFrame(data={"Col1":np.random.randint(low=-100,high=100,size=10),
@@ -188,12 +188,12 @@ st.write("---")
 
 
 #### you can create 'columns' (or split the row space) and assign multiple items/widgets
-#### you should use st.beta_columns() and inform amount of columns
+#### you should use st.columns() and inform amount of columns
 #### that will be assigned to individual variables, i.e.: if there were three columns, you would have col1, col2, col3
 #### you will define the content on each variable with the command "with:"
 #### this example prints a list in the first column and display a widget in the second column
 
-# col1, col2 = st.beta_columns(2)
+# col1, col2 = st.columns(2)
 # with col1:
 #     st.write([1,2,3])
 # with col2:
