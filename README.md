@@ -2,15 +2,11 @@
 
 ## How to use this repo
 
-1. Fork this repo and copy the https URL of your forked streamlit-lesson repo
+1. Fork this repo 
 
-1. Log into the cloud IDE with your GitHub account.
+1. In your repo click on the green **Code** button. 
 
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
+1. Then, from the Codespaces tab, click **Create codespace on main**.
 
 1. Wait for the workspace to open. This can take a few minutes.
 
