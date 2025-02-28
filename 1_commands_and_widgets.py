@@ -41,7 +41,7 @@ st.write("---")
 # my_list = [10,50,409] # Python list
 # my_dict = {'Number':[1,2,3], 'Color': ['Blue', 'Yellow', 'Green']} # python dictionary
 
-##### we will use pandas and numpy to generate a DataFrame. 
+##### We will use pandas and numpy to generate a DataFrame. 
 ##### For now, think of a DataFrame as a table with columns, rows and data.
 # import numpy as np
 # import pandas as pd 
@@ -70,9 +70,9 @@ st.write("---")
 ################################################################################
 
 ##### We will use matplotlib, seaborn and plotly  for data visualization
-##### for now, we just need to understand the plotting capability
-##### the commands and their usability will come clear across the lessons and walkthrough project
-##### we will use a generated DataFrame
+##### For now, we just need to understand the plotting capability
+##### The commands and their usability will come clear across the lessons and walkthrough project
+##### We will use a generated DataFrame
 # import numpy as np
 # import pandas as pd 
 # np.random.seed(1)
@@ -87,7 +87,7 @@ st.write("---")
 # sns.set_style("whitegrid")
 # fig, axes = plt.subplots()
 # sns.scatterplot(data=df, x='Col1', y='Col2', ax=axes)
-# st.pyplot(fig) # When you render a Matplotlib or Seaborn plot, you wil use st.pyplot()
+# st.pyplot(fig) # When you render a Matplotlib or Seaborn plot, you will use st.pyplot()
 #                # for example, in a jupyter notebook, we render with plt.show()
 #                # don't worry; we will see that in more detail soon 
 # st.write("---")
@@ -95,8 +95,8 @@ st.write("---")
 # st.write("* This example uses Plotly - an interactive data visualization library")
 # import plotly.express as px
 # fig = px.scatter(data_frame=df, x='Col1', y='Col2',width=800,height=400)
-# st.plotly_chart(fig) # When you render a Plotly plot, you wil use st.plotly_chart()
-#                      # in a jupyter notebook, we render with plt.show() 
+# st.plotly_chart(fig) # When you render a Plotly plot, you will use st.plotly_chart()
+#                      # In a jupyter notebook, we render with plt.show() 
 # st.write("---")
 
 
@@ -107,9 +107,9 @@ st.write("---")
 ### Optimize performance ###
 ################################################################################
 
-#### Currently, every time you reload the dashboard page so is the script
-#### this may cause a delay in your app, i.e.: you may reload multiple time the same data 
-#### to solve that, you can cache your data by adding a decorator @st.cache_data in a function that loads your data
+#### Currently, every time you reload the dashboard page, so is the script
+#### This may cause a delay in your app, i.e., you may reload multiple time the same data 
+#### To solve that, you can cache your data by adding a decorator @st.cache_data in a function that loads your data
 #### in this example, you might not notice the speed difference, but in real applications, this difference is noticeable
 
 # import numpy as np
@@ -187,11 +187,11 @@ st.write("---")
 
 
 
-#### you can create 'columns' (or split the row space) and assign multiple items/widgets
+#### You can create 'columns' (or split the row space) and assign multiple items/widgets
 #### you should use st.columns() and inform amount of columns
-#### that will be assigned to individual variables, i.e.: if there were three columns, you would have col1, col2, col3
-#### you will define the content on each variable with the command "with:"
-#### this example prints a list in the first column and display a widget in the second column
+#### that will be assigned to individual variables, i.e., if there were three columns, you would have col1, col2, col3
+#### You will define the content on each variable with the command "with:"
+#### this example prints a list in the first column and displays a widget in the second column
 
 # col1, col2 = st.columns(2)
 # with col1:
